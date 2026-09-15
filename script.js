@@ -29,8 +29,14 @@ document.querySelectorAll('.tab, .site-nav a[data-tab]').forEach((tab) => {
     document.querySelectorAll('.tab-panel').forEach((panel) => {
       panel.classList.toggle('active', panel.id === target);
     });
+    history.replaceState(null, '', `#${target}`);
     targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+const initialTab = window.location.hash.slice(1);
+if (initialTab) {
+  document.querySelector(`.tab[data-tab="${initialTab}"]`)?.click();
+}
 
 document.querySelector('#year').textContent = '2016';
