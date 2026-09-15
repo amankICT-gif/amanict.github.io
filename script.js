@@ -13,4 +13,24 @@ siteNav?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+document.querySelectorAll('.tab, .site-nav a[data-tab]').forEach((tab) => {
+  tab.addEventListener('click', (event) => {
+    event.preventDefault();
+    const target = tab.getAttribute('data-tab');
+    const targetPanel = document.getElementById(target);
+
+    if (!targetPanel) return;
+
+    document.querySelectorAll('.tab').forEach((item) => {
+      const isActive = item.getAttribute('data-tab') === target;
+      item.classList.toggle('active', isActive);
+      item.setAttribute('aria-selected', String(isActive));
+    });
+    document.querySelectorAll('.tab-panel').forEach((panel) => {
+      panel.classList.toggle('active', panel.id === target);
+    });
+    targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
 document.querySelector('#year').textContent = '2016';

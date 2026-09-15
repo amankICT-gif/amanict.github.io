@@ -24,8 +24,8 @@
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
         <a href="#profile">Profile</a>
-        <a href="#focus">Focus</a>
-        <a href="#contact">Contact</a>
+        <a href="#focus" data-tab="focus">Focus</a>
+        <a href="#contact" data-tab="contact">Contact</a>
       </nav>
     </header>
 
@@ -62,7 +62,13 @@
         </div>
       </section>
 
-      <section class="focus-section wrap" id="focus">
+      <div class="profile-tabs wrap" role="tablist" aria-label="Profile sections">
+        <button class="tab active" id="focus-tab" type="button" role="tab" aria-selected="true" aria-controls="focus" data-tab="focus">01 / Focus</button>
+        <button class="tab" id="achievements-tab" type="button" role="tab" aria-selected="false" aria-controls="achievements" data-tab="achievements">02 / Achievements</button>
+        <button class="tab" id="contact-tab" type="button" role="tab" aria-selected="false" aria-controls="contact" data-tab="contact">03 / Contact</button>
+      </div>
+
+      <section class="focus-section wrap tab-panel active" id="focus" role="tabpanel" aria-labelledby="focus-tab">
         <div class="section-heading">
           <p class="eyebrow">What I bring to the table</p>
           <h2>Curious by default.<br />Precise when it counts.</h2>
@@ -86,7 +92,7 @@
         </div>
       </section>
 
-      <section class="achievement-section wrap" id="achievements">
+      <section class="achievement-section wrap tab-panel" id="achievements" role="tabpanel" aria-labelledby="achievements-tab">
         <div class="section-heading achievement-heading">
           <p class="eyebrow">Proof of practice</p>
           <h2>Learning by<br /><em>doing.</em></h2>
@@ -112,7 +118,7 @@
         </div>
       </section>
 
-      <section class="contact-section wrap" id="contact">
+      <section class="contact-section wrap tab-panel" id="contact" role="tabpanel" aria-labelledby="contact-tab">
         <div>
           <p class="eyebrow">Open channel</p>
           <h2>Have a hard<br /><em>problem?</em></h2>
