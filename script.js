@@ -12,7 +12,7 @@ navToggle?.addEventListener('click', () => {
 });
 
 mainNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeNav));
-document.querySelector('#year').textContent = String(new Date().getFullYear());
+document.querySelector('#year').textContent = '2016';
 
 const sections = [...document.querySelectorAll('main section[id]')];
 const links = [...document.querySelectorAll('.main-nav a')];
