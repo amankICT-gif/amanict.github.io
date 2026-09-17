@@ -1,30 +1,29 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const siteNav = document.querySelector('.site-nav');
+const navToggle = document.querySelector('.nav-toggle');
+const mainNav = document.querySelector('.main-nav');
 
-const closeMenu = () => {
-  siteNav?.classList.remove('is-open');
-  menuToggle?.setAttribute('aria-expanded', 'false');
+const closeNav = () => {
+  mainNav?.classList.remove('is-open');
+  navToggle?.setAttribute('aria-expanded', 'false');
 };
 
-menuToggle?.addEventListener('click', () => {
-  const isOpen = siteNav?.classList.toggle('is-open') ?? false;
-  menuToggle.setAttribute('aria-expanded', String(isOpen));
+navToggle?.addEventListener('click', () => {
+  const open = mainNav?.classList.toggle('is-open') ?? false;
+  navToggle.setAttribute('aria-expanded', String(open));
 });
 
-siteNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
-
-document.querySelector('#year').textContent = new Date().getFullYear();
+mainNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeNav));
+document.querySelector('#year').textContent = String(new Date().getFullYear());
 
 const sections = [...document.querySelectorAll('main section[id]')];
-const navLinks = [...document.querySelectorAll('.site-nav a')];
-const linkById = new Map(navLinks.map((link) => [link.getAttribute('href')?.slice(1), link]));
+const links = [...document.querySelectorAll('.main-nav a')];
+const linkFor = (id) => links.find((link) => link.getAttribute('href') === '#' + id);
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
-    navLinks.forEach((link) => link.classList.remove('is-active'));
-    linkById.get(entry.target.id)?.classList.add('is-active');
+    links.forEach((link) => link.classList.remove('is-active'));
+    linkFor(entry.target.id)?.classList.add('is-active');
   });
-}, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+}, { rootMargin: '-32% 0px -58% 0px' });
 
 sections.forEach((section) => observer.observe(section));
