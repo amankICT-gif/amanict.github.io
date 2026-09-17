@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Aman ICT — cybersecurity practitioner focused on defensive security, detection, and secure systems." />
-    <meta name="theme-color" content="#090b0a" />
-    <title>Aman ICT // Cybersecurity</title>
+    <meta name="description" content="Aman ICT — cybersecurity portfolio, defensive security practice, and technical projects." />
+    <meta name="theme-color" content="#080908" />
+    <title>Aman — Cyber Security Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,161 +13,125 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="grid-lines" aria-hidden="true"></div>
-    <div class="noise" aria-hidden="true"></div>
-
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Aman ICT home">
-        <span class="brand-mark">A/</span>
-        <span class="brand-name">AMAN ICT</span>
-      </a>
-      <div class="header-prompt" aria-hidden="true"><span>~/security</span> <b>$</b> profile --online</div>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Toggle navigation</span>
-        <span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#about">01 / About</a>
-        <a href="#focus">02 / Focus</a>
-        <a href="#work">03 / Work</a>
-        <a href="#contact">04 / Contact</a>
-      </nav>
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="topbar-inner page-width">
+        <a class="wordmark" href="#top"><span class="wordmark-symbol">A/</span><span>AMAN ICT</span></a>
+        <div class="topbar-status"><span class="live-dot"></span> SECURITY PROFILE <span class="slash">//</span> ONLINE</div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="sr-only">Open navigation</span><i></i><i></i></button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="#profile">PROFILE</a>
+          <a href="#practice">PRACTICE</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero section-wrap" id="about">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> CYBERSECURITY PROFILE / ONLINE</p>
-          <h1><span class="muted">@</span>Aman<br /><em>ICT</em></h1>
-          <p class="hero-role">Cybersecurity practitioner<br /><span>defensive by design.</span></p>
-          <p class="hero-intro">I build practical security tooling and explore how systems can become safer, more observable, and more resilient.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Inspect the work <span aria-hidden="true">↗</span></a>
-            <a class="quiet-link" href="https://github.com/amankICT-gif" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
+    <main id="top" class="page-width">
+      <section id="profile" class="intro-section">
+        <div class="command-line"><span>$</span> whoami</div>
+        <h1><span class="hash">#</span> @Aman</h1>
+        <p class="role-line">Cybersecurity practitioner. <em>Bridging analysis, automation, and secure systems.</em></p>
+        <div class="intro-meta"><span>DEFENSIVE SECURITY</span><span>SECURITY ANALYSIS</span><span>SECURE SYSTEMS</span></div>
+        <p class="intro-copy">I build practical security tooling and study the edges where people, technology, and risk meet. My focus is on making systems more observable, more resilient, and easier to defend.</p>
 
-        <div class="hero-console" aria-label="Security profile terminal">
-          <div class="console-top"><span class="console-dots"><i></i><i></i><i></i></span><span>profile.sh</span><span class="console-lock">read-only</span></div>
-          <div class="console-body">
-            <p><span class="prompt">$</span> whoami</p>
-            <p class="console-output accent">aman@security-lab</p>
-            <p><span class="prompt">$</span> cat /focus.txt</p>
-            <p class="console-output">THREAT DETECTION<br />SECURITY ANALYSIS<br />SECURE SYSTEMS</p>
-            <p><span class="prompt">$</span> status --verbose</p>
-            <div class="status-lines">
-              <p><span class="check">[ok]</span> learning continuously</p>
-              <p><span class="check">[ok]</span> building defensively</p>
-              <p><span class="check">[ok]</span> evidence over assumptions</p>
-            </div>
-            <span class="cursor" aria-hidden="true"></span>
-          </div>
-          <div class="console-seal"><span>AMN</span><span>01</span></div>
-        </div>
-      </section>
-
-      <section class="signal-strip" aria-label="Profile signals">
-        <div class="section-wrap signal-grid">
-          <div class="signal-item"><span class="signal-value">04</span><span class="signal-label">core focus areas</span></div>
-          <div class="signal-item"><span class="signal-value">∞</span><span class="signal-label">things to investigate</span></div>
-          <div class="signal-item"><span class="signal-value">24/7</span><span class="signal-label">security mindset</span></div>
-          <p class="signal-quote">“Make the secure path<br /><strong>the obvious path.</strong>”</p>
-        </div>
-      </section>
-
-      <section class="focus-section section-wrap" id="focus">
-        <div class="section-index">02 / FOCUS</div>
-        <div class="section-heading">
-          <p class="eyebrow">The work behind the signal</p>
-          <h2>Find the weak point.<br /><em>Improve the system.</em></h2>
-          <p>Security is a continuous practice: reduce attack surface, instrument what matters, investigate with evidence, and automate repeatable defenses.</p>
-        </div>
-        <div class="focus-grid">
-          <article class="focus-card">
-            <span class="card-number">01</span>
-            <div class="icon-mark">⌁</div>
-            <h3>Threat detection</h3>
-            <p>Turning logs, events, and patterns into signals a person can act on.</p>
-            <span class="card-tag">DETECT / RESPOND</span>
-          </article>
-          <article class="focus-card featured-card">
-            <span class="card-number">02</span>
-            <div class="icon-mark">⌬</div>
-            <h3>Security analysis</h3>
-            <p>Asking better questions of systems, behavior, and the evidence left behind.</p>
-            <span class="card-tag">INVESTIGATE / LEARN</span>
-          </article>
-          <article class="focus-card">
-            <span class="card-number">03</span>
-            <div class="icon-mark">◈</div>
-            <h3>Secure systems</h3>
-            <p>Building with safer defaults, clearer boundaries, and fewer surprises.</p>
-            <span class="card-tag">HARDEN / AUTOMATE</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="toolkit-section section-wrap" aria-labelledby="toolkit-title">
-        <div class="section-index">03 / TOOLKIT</div>
-        <div class="toolkit-layout">
-          <div>
-            <p class="eyebrow">Current instruments</p>
-            <h2 id="toolkit-title">Tools are useful.<br /><em>Thinking is the tool.</em></h2>
-          </div>
-          <div class="toolkit-content">
-            <p class="toolkit-note">A working set for building, testing, and understanding security systems.</p>
-            <div class="tool-tags" aria-label="Technology and focus areas">
-              <span>PYTHON</span><span>JAVASCRIPT</span><span>LINUX</span><span>GIT</span><span>NETWORKING</span><span>LOG ANALYSIS</span><span>THREAT DETECTION</span><span>SECURE CODING</span><span>AUTOMATION</span>
-            </div>
-            <div class="principles">
-              <div><span>01</span><p>Observe before you assume.</p></div>
-              <div><span>02</span><p>Automate what repeats.</p></div>
-              <div><span>03</span><p>Leave systems clearer than you found them.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="work-section section-wrap" id="work">
-        <div class="section-index">04 / WORK</div>
-        <div class="work-header">
-          <div>
-            <p class="eyebrow">Selected public work</p>
-            <h2>Small tools.<br /><em>Useful signals.</em></h2>
-          </div>
-          <p class="work-intro">A public trail of experiments, portfolio work, and security-focused learning.</p>
-        </div>
-        <div class="work-list">
-          <a class="work-row" href="https://github.com/amankICT-gif/amanict.github.io" target="_blank" rel="noreferrer">
-            <span class="work-id">001</span><span class="work-title">Cybersecurity portfolio</span><span class="work-type">GITHUB PAGES</span><span class="work-arrow">↗</span>
+        <div class="profile-panels">
+          <a class="profile-panel" href="https://github.com/amankICT-gif" target="_blank" rel="noreferrer">
+            <div class="panel-top"><span class="panel-icon">◆</span><span class="panel-kicker">GITHUB // PUBLIC PROFILE</span><span class="panel-arrow">↗</span></div>
+            <div class="panel-name">amankICT-gif</div>
+            <div class="panel-description">Repositories, security experiments, and an open record of the work.</div>
+            <div class="panel-footer"><span>PROFILE ONLINE</span><span>VIEW PROFILE</span></div>
           </a>
-          <a class="work-row" href="https://github.com/amankICT-gif" target="_blank" rel="noreferrer">
-            <span class="work-id">002</span><span class="work-title">GitHub profile & repositories</span><span class="work-type">OPEN PROFILE</span><span class="work-arrow">↗</span>
+          <a class="profile-panel" href="https://amankict-gif.github.io/amanict.github.io/" target="_blank" rel="noreferrer">
+            <div class="panel-top"><span class="panel-icon">▚</span><span class="panel-kicker">GITHUB PAGES // PORTFOLIO</span><span class="panel-arrow">↗</span></div>
+            <div class="panel-name">amanict.github.io</div>
+            <div class="panel-description">A focused home for security work, tools, and the thinking behind them.</div>
+            <div class="panel-footer"><span>LIVE SITE</span><span>OPEN PORTFOLIO</span></div>
           </a>
-          <div class="work-row work-row-static">
-            <span class="work-id">003</span><span class="work-title">Security tooling experiments</span><span class="work-type">IN PROGRESS</span><span class="work-arrow">→</span>
+        </div>
+
+        <div class="quick-grid">
+          <div><span class="quick-label">CURRENT MODE</span><strong>BUILDING</strong></div>
+          <div><span class="quick-label">PRIMARY LENS</span><strong>DEFENSIVE</strong></div>
+          <div><span class="quick-label">WORK STYLE</span><strong>METHODICAL</strong></div>
+          <div><span class="quick-label">SIGNAL</span><strong class="signal-text">● ONLINE</strong></div>
+        </div>
+      </section>
+
+      <section id="practice" class="content-section">
+        <div class="section-label">01 / PRACTICE</div>
+        <div class="section-content">
+          <div class="section-title-row"><h2>Top interests</h2><span class="section-note">THE AREAS I KEEP RETURNING TO</span></div>
+          <div class="tag-cloud"><span>THREAT DETECTION</span><span>SECURITY OPERATIONS</span><span>LOG ANALYSIS</span><span>SECURITY AUTOMATION</span><span>SECURE CODING</span><span>LINUX &amp; NETWORKING</span><span>APPLICATION SECURITY</span><span>INCIDENT RESPONSE</span></div>
+
+          <div class="section-title-row subheading"><h3>Toolstack &amp; languages</h3><span class="section-note">A PRACTICAL WORKING SET</span></div>
+          <div class="tool-list"><span>Python</span><span>JavaScript</span><span>Bash</span><span>Linux</span><span>Git</span><span>Networking</span><span>Log analysis</span><span>Automation</span></div>
+        </div>
+      </section>
+
+      <section id="evidence" class="content-section">
+        <div class="section-label">02 / EVIDENCE</div>
+        <div class="section-content">
+          <div class="section-title-row"><h2>Badges</h2><span class="section-note">PUBLIC SIGNALS, NOT EMPTY CLAIMS</span></div>
+          <div class="evidence-grid">
+            <article class="evidence-card"><span class="evidence-mark">✓</span><div><h3>Public profile</h3><p>One place to inspect the repositories, experiments, and security direction.</p></div><span class="evidence-state">VERIFIABLE</span></article>
+            <article class="evidence-card"><span class="evidence-mark">⌁</span><div><h3>Portfolio shipped</h3><p>A live, source-linked portfolio built as a working GitHub Pages site.</p></div><span class="evidence-state">LIVE</span></article>
+            <article class="evidence-card"><span class="evidence-mark">◆</span><div><h3>Continuous practice</h3><p>Learning through small tools, analysis workflows, and repeatable defensive habits.</p></div><span class="evidence-state">IN PROGRESS</span></article>
+          </div>
+
+          <div class="section-title-row subheading"><h3>Working principles</h3><span class="section-note">HOW I APPROACH SECURITY</span></div>
+          <div class="principles-list"><div><b>01</b><span>Observe before you assume.</span></div><div><b>02</b><span>Turn raw telemetry into useful signals.</span></div><div><b>03</b><span>Make the secure path the obvious path.</span></div><div><b>04</b><span>Automate the repeatable; document the rest.</span></div></div>
+        </div>
+      </section>
+
+      <section id="lab" class="content-section">
+        <div class="section-label">03 / SECURITY LAB</div>
+        <div class="section-content">
+          <div class="section-title-row"><h2>Areas of practice</h2><span class="section-note">THE LAB IS THE CURRICULUM</span></div>
+          <div class="lab-grid">
+            <article class="lab-card"><span>01</span><h3>Threat detection</h3><p>Spotting patterns across events and turning them into actionable investigation paths.</p><div class="lab-footer">DETECT / TRIAGE</div></article>
+            <article class="lab-card"><span>02</span><h3>Log analysis</h3><p>Reading the trail systems leave behind and separating signal from noise.</p><div class="lab-footer">ANALYSE / EXPLAIN</div></article>
+            <article class="lab-card"><span>03</span><h3>Secure systems</h3><p>Improving defaults, boundaries, visibility, and recovery before they become incidents.</p><div class="lab-footer">HARDEN / VERIFY</div></article>
+            <article class="lab-card"><span>04</span><h3>Security automation</h3><p>Building small repeatable tools that make defensive work faster and less error-prone.</p><div class="lab-footer">SCRIPT / REPEAT</div></article>
+            <article class="lab-card"><span>05</span><h3>Application security</h3><p>Learning how software fails so safer design becomes part of the build, not an afterthought.</p><div class="lab-footer">TEST / IMPROVE</div></article>
+            <article class="lab-card"><span>06</span><h3>Incident thinking</h3><p>Following evidence, communicating clearly, and leaving a system easier to defend.</p><div class="lab-footer">RESPOND / LEARN</div></article>
           </div>
         </div>
       </section>
 
-      <section class="contact-section section-wrap" id="contact">
-        <div class="contact-terminal">
-          <div class="terminal-label"><span class="status-dot"></span> OPEN CHANNEL</div>
-          <p class="terminal-command"><span>$</span> echo $NEXT_MOVE</p>
-          <h2>Build something<br /><em>worth securing.</em></h2>
-          <p>If you are working on a practical security problem, a tool, or a system that needs a sharper defensive perspective, start with the public profile.</p>
-          <div class="contact-actions">
-            <a class="button button-primary" href="https://github.com/amankICT-gif" target="_blank" rel="noreferrer">Open GitHub <span aria-hidden="true">↗</span></a>
-            <a class="quiet-link" href="https://github.com/amankICT-gif/amanict.github.io" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+      <section id="projects" class="content-section">
+        <div class="section-label">04 / PROJECTS</div>
+        <div class="section-content">
+          <div class="section-title-row"><h2>Selected work</h2><span class="section-note">SMALL TOOLS. USEFUL SIGNALS.</span></div>
+          <div class="project-list">
+            <a class="project-row" href="https://github.com/amankICT-gif/amanict.github.io" target="_blank" rel="noreferrer"><span class="project-id">001</span><div><h3>Cybersecurity portfolio</h3><p>Long-form profile, practice areas, and security work.</p></div><span class="project-type">GITHUB PAGES</span><span class="project-arrow">↗</span></a>
+            <a class="project-row" href="https://github.com/amankICT-gif/amankICT-gif" target="_blank" rel="noreferrer"><span class="project-id">002</span><div><h3>GitHub security profile</h3><p>Profile README focused on defensive security and secure systems.</p></div><span class="project-type">PROFILE REPO</span><span class="project-arrow">↗</span></a>
+            <div class="project-row muted-row"><span class="project-id">003</span><div><h3>Security tooling experiments</h3><p>Analysis helpers and defensive workflows being developed in public over time.</p></div><span class="project-type">IN PROGRESS</span><span class="project-arrow">→</span></div>
           </div>
         </div>
+      </section>
+
+      <section id="automation" class="content-section">
+        <div class="section-label">05 / AUTOMATION</div>
+        <div class="section-content">
+          <div class="section-title-row"><h2>Scripts &amp; systems</h2><span class="section-note">REPEATABLE DEFENSES</span></div>
+          <div class="script-groups">
+            <div class="script-group"><h3>Security &amp; hardening</h3><p>Checks, guardrails, and safer defaults that reduce avoidable exposure.</p><span class="script-count">01 / FOUNDATION</span></div>
+            <div class="script-group"><h3>Monitoring &amp; response</h3><p>Small workflows that surface the right signal when something changes.</p><span class="script-count">02 / VISIBILITY</span></div>
+            <div class="script-group"><h3>Analysis helpers</h3><p>Tools that make logs, events, and technical output easier to understand.</p><span class="script-count">03 / CLARITY</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="command-line"><span>$</span> open --channel collaboration</div>
+        <h2>Build something<br /><em>worth securing.</em></h2>
+        <p>For practical security problems, defensive tooling, or collaborative learning, the public profile is the best place to start.</p>
+        <div class="contact-links"><a href="https://github.com/amankICT-gif" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a><a href="https://amankict-gif.github.io/amanict.github.io/" target="_blank" rel="noreferrer">Live portfolio <span>↗</span></a></div>
       </section>
     </main>
 
-    <footer class="site-footer section-wrap">
-      <span>AMAN ICT / CYBERSECURITY</span>
-      <span>BUILT WITH CURIOSITY · <span id="year"></span></span>
-      <a href="#top">BACK TO TOP ↑</a>
-    </footer>
+    <footer class="footer page-width"><span>AMAN ICT / CYBER SECURITY PORTFOLIO</span><span>BUILT WITH CURIOSITY · <span id="year"></span></span><a href="#top">BACK TO TOP ↑</a></footer>
   </body>
 </html>
